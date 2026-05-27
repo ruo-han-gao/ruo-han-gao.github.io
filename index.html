@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ruohan Gao is a PhD student at the Max Planck School of Cognition studying social environments, social health, and cerebellar structure across the lifespan.">
+  <meta name="description" content="I am a PhD student at the Max Planck School of Cognition studying social environments, social health, and cerebellar structure across the lifespan.">
   <title>Ruohan Gao</title>
   <style>
     :root {
@@ -30,7 +30,7 @@
 
     body {
       margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: Avenir, "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
       color: var(--ink);
       background: var(--paper);
       line-height: 1.65;
@@ -111,8 +111,8 @@
     h1 {
       margin: 0;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(3rem, 8vw, 5.8rem);
-      line-height: 0.96;
+      font-size: clamp(2.7rem, 6.4vw, 4.65rem);
+      line-height: 1;
       font-weight: 500;
       letter-spacing: 0;
     }
@@ -157,21 +157,21 @@
     }
 
     .visual {
-      background: linear-gradient(145deg, #ffffff 0%, #f1ece3 100%);
       border: 1px solid var(--line);
       border-radius: 8px;
       box-shadow: var(--shadow);
-      padding: 1.25rem;
-      min-height: 360px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      min-height: 390px;
+      overflow: hidden;
+      background: #efe7dc;
     }
 
-    .visual svg {
-      width: min(100%, 420px);
-      height: auto;
+    .visual img {
+      width: 100%;
+      height: 100%;
+      min-height: 390px;
       display: block;
+      object-fit: cover;
+      object-position: 52% 50%;
     }
 
     main {
@@ -300,7 +300,11 @@
       }
 
       .visual {
-        min-height: 270px;
+        min-height: 300px;
+      }
+
+      .visual img {
+        min-height: 300px;
       }
 
       .interests {
@@ -351,36 +355,8 @@
       </div>
     </div>
 
-    <div class="visual" aria-label="Abstract network illustration connecting social environment, brain structure, and emotion.">
-      <svg viewBox="0 0 520 420" role="img" aria-labelledby="network-title network-desc" xmlns="http://www.w3.org/2000/svg">
-        <title id="network-title">Social health and brain research network</title>
-        <desc id="network-desc">An abstract diagram of connected research themes, including social environment, cerebellum, emotion, and aging.</desc>
-        <rect width="520" height="420" rx="24" fill="#f8f3ea"/>
-        <path d="M96 291 C150 192, 218 336, 292 216 S394 145, 432 235" fill="none" stroke="#b98032" stroke-width="3" opacity="0.82"/>
-        <path d="M110 148 C178 80, 250 184, 310 130 S409 111, 435 181" fill="none" stroke="#256d68" stroke-width="3" opacity="0.78"/>
-        <path d="M144 242 C212 201, 268 275, 352 246" fill="none" stroke="#8b3a62" stroke-width="3" opacity="0.74"/>
-        <g fill="#ffffff" stroke-width="3">
-          <circle cx="110" cy="148" r="35" stroke="#256d68"/>
-          <circle cx="208" cy="215" r="48" stroke="#8b3a62"/>
-          <circle cx="315" cy="130" r="38" stroke="#256d68"/>
-          <circle cx="394" cy="248" r="54" stroke="#b98032"/>
-          <circle cx="145" cy="301" r="30" stroke="#b98032"/>
-        </g>
-        <g font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#1f2933">
-          <text x="110" y="143">Social</text>
-          <text x="110" y="162">worlds</text>
-          <text x="208" y="211">Cerebellar</text>
-          <text x="208" y="230">structure</text>
-          <text x="315" y="126">Emotion</text>
-          <text x="315" y="145">perception</text>
-          <text x="394" y="244">Loneliness</text>
-          <text x="394" y="263">& regulation</text>
-          <text x="145" y="306">Aging</text>
-        </g>
-        <circle cx="70" cy="354" r="5" fill="#256d68" opacity="0.7"/>
-        <circle cx="463" cy="86" r="7" fill="#8b3a62" opacity="0.65"/>
-        <circle cx="456" cy="330" r="4" fill="#b98032" opacity="0.7"/>
-      </svg>
+    <div class="visual">
+      <img src="assets/profile-desert.jpeg" alt="Ruohan Gao walking through a desert landscape.">
     </div>
   </section>
 
@@ -389,8 +365,8 @@
       <div class="content">
         <h2>About</h2>
         <div class="section-text">
-          <p>Ruohan is a PhD student at the Max Planck School of Cognition. She studies the associations between social environments and cerebellar structure in both young and older populations.</p>
-          <p>Her work focuses on how social health affects, and is affected by, brain structure and function. She is especially interested in the links between social experience, emotion, and cognition across the lifespan.</p>
+          <p>I am a PhD student at the Max Planck School of Cognition. I study the associations between social environments and cerebellar structure in both young and older populations.</p>
+          <p>My work focuses on how social health affects, and is affected by, brain structure and function. I am especially interested in the links between social experience, emotion, and cognition across the lifespan.</p>
         </div>
       </div>
     </section>
@@ -446,4 +422,3 @@
   </footer>
 </body>
 </html>
-
