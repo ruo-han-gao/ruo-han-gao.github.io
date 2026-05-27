@@ -9,14 +9,15 @@
     :root {
       --ink: #1f2933;
       --muted: #5f6c7b;
-      --paper: #fbfaf7;
+      --paper: #ffffff;
       --panel: #ffffff;
       --line: #e7e0d6;
       --teal: #256d68;
       --teal-dark: #174c49;
       --berry: #8b3a62;
       --gold: #b98032;
-      --mist: #eef5f3;
+      --mist: #f3f8f7;
+      --soft-panel: #f6faf9;
       --shadow: 0 18px 45px rgba(31, 41, 51, 0.09);
     }
 
@@ -48,7 +49,7 @@
 
     .site-header {
       border-bottom: 1px solid var(--line);
-      background: rgba(251, 250, 247, 0.92);
+      background: rgba(255, 255, 255, 0.92);
       backdrop-filter: blur(12px);
       position: sticky;
       top: 0;
@@ -157,21 +158,18 @@
     }
 
     .visual {
-      border: 1px solid var(--line);
       border-radius: 8px;
-      box-shadow: var(--shadow);
-      min-height: 390px;
+      min-height: 0;
       overflow: hidden;
-      background: #efe7dc;
+      background: transparent;
     }
 
     .visual img {
       width: 100%;
-      height: 100%;
-      min-height: 390px;
+      height: auto;
       display: block;
-      object-fit: cover;
-      object-position: 52% 50%;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
     }
 
     main {
@@ -183,7 +181,7 @@
     }
 
     .section:nth-child(even) {
-      background: var(--mist);
+      background: #ffffff;
     }
 
     .content {
@@ -208,6 +206,10 @@
       max-width: 760px;
       font-size: 1.06rem;
       color: #364350;
+      background: var(--soft-panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 1.25rem;
     }
 
     .section-text p:first-child {
@@ -224,7 +226,7 @@
     .interest {
       border: 1px solid var(--line);
       border-radius: 8px;
-      background: var(--panel);
+      background: var(--soft-panel);
       padding: 1rem;
       min-height: 132px;
       box-shadow: 0 10px 25px rgba(31, 41, 51, 0.05);
@@ -246,6 +248,10 @@
       display: grid;
       gap: 0.85rem;
       max-width: 560px;
+      background: var(--soft-panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 1.25rem;
     }
 
     .contact-item {
@@ -300,11 +306,7 @@
       }
 
       .visual {
-        min-height: 300px;
-      }
-
-      .visual img {
-        min-height: 300px;
+        max-width: 620px;
       }
 
       .interests {
@@ -356,7 +358,7 @@
     </div>
 
     <div class="visual">
-      <img src="assets/profile-desert.jpeg" alt="Ruohan Gao walking through a desert landscape.">
+      <img src="assets/profile-desert.JPG" alt="Ruohan Gao walking through a desert landscape.">
     </div>
   </section>
 
