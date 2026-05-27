@@ -2,9 +2,9 @@
   --ink: #1f2933;
   --muted: #667481;
   --paper: #ffffff;
-  --panel: #f4f8fa;
-  --accent: #4d7590;
-  --accent-dark: #2f5872;
+  --panel: #f5f5f5;
+  --accent: #5f86a0;
+  --accent-dark: #446b86;
   --line: #e7edf1;
   --shadow: 0 14px 34px rgba(31, 41, 51, 0.08);
 }
@@ -20,15 +20,15 @@ html {
 body {
   margin: 0;
   font-family: Avenir, "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: var(--ink);
+  color: #34414d;
   background: var(--paper);
   line-height: 1.7;
 }
 
 a {
   color: var(--accent-dark);
-  text-decoration-thickness: 0.08em;
-  text-underline-offset: 0.22em;
+  text-decoration: none;
+  transition: color 0.18s ease;
 }
 
 a:hover {
@@ -101,7 +101,8 @@ h1 {
   margin: 0;
   font-size: clamp(2.75rem, 6vw, 4.35rem);
   line-height: 1.03;
-  font-weight: 650;
+  font-weight: 600;
+  color: #3f4b56;
 }
 
 .lead {
@@ -150,8 +151,7 @@ h2 {
   font-weight: 650;
 }
 
-.section-text,
-.contact-list {
+.section-text {
   max-width: 760px;
   font-size: 1.03rem;
   color: #34414d;
@@ -196,22 +196,19 @@ h2 {
 }
 
 .contact-list {
-  display: grid;
-  gap: 0.85rem;
+  max-width: 760px;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: baseline;
+  font-size: 1.03rem;
+  color: #34414d;
 }
 
 .contact-item {
   display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  align-items: center;
-  padding-bottom: 0.85rem;
-  border-bottom: 1px solid var(--line);
-}
-
-.contact-item:last-child {
-  border-bottom: 0;
-  padding-bottom: 0;
+  gap: 0.35rem;
+  align-items: baseline;
 }
 
 .contact-item span {
@@ -219,9 +216,8 @@ h2 {
 }
 
 .contact-item a {
-  font-weight: 650;
+  font-weight: 600;
   overflow-wrap: anywhere;
-  text-align: right;
 }
 
 footer {
